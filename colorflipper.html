@@ -9,7 +9,11 @@
     <link
       href="https://fonts.googleapis.com/css?family=Raleway"
       rel="stylesheet"
+      
     />
+    <meta name="theme-color" 
+      content="#4169e1" 
+      media="(prefers-color-scheme: light)">
   </head>
   <script>
     function backgroundSet() {
@@ -76,10 +80,14 @@
     .colorInput {
       margin-top: 15px;
     }
+    a {
+      color: white;
+      text-decoration: none;
+    }
   </style>
-  <header>
+  <a href=""><header>
     Color Flipper
-    <h5>by Qpx Design</h5>
+    <h5>by Qpx Design</h5></a>
   </header>
   <div class="colorInput">
     <input type="Number" id="redInput" placeholder="255" oninput="backgroundSet()"/>
