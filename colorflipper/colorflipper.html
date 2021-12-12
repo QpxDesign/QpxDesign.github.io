@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Flipper | Qpx Design</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vyh1asz.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+      
+    />      
+    <link rel="stylesheet" href="colorflipper.css">
+    <meta name="theme-color" 
+      content="royalblue" 
+      media="(prefers-color-scheme: light)">
+  </head>
+  <script src="/colorflipper.js"></script>
+  <style>
+  </style>
+  <a href="/home/index.html"><header>
+    Color Flipper
+    <h5>by Qpx Design</h5></a>
+  </header>
+  <div class="colorInput">
+    <input type="Number" id="redInput" placeholder="255" oninput="backgroundSet()"/>
+    <input type="Number" id="greenInput" placeholder="255" oninput="backgroundSet()"/>
+    <input type="Number " id="blueInput" placeholder="255" oninput="backgroundSet()"/>
+    <button onclick="backgroundFlip()">FLIP</button>
+    <div>
+      <body></body>
+    </div>
+    <div class="background"></div>
+</html>
