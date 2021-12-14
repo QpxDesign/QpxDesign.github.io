@@ -16,6 +16,39 @@ function caseConverter() {
             result = a.toLowerCase();
         }
     }
-    console.log(result)
     document.getElementById("textInput").value = String(result);
+}
+function wordCounter() {
+    var a = document.getElementById("textInput").value;
+    var b = a.split(" ");
+    var result = 0;
+    for (var i = 0; i < b.length; i++) {
+        if (b[i] != " " || b[i] != "  ") {
+            result++;
+        }
+    }
+    document.getElementById("wordCount").innerHTML = result;
+}
+function sentanceCount() {
+    var a = document.getElementById("textInput").value;
+    var b = a.split("");
+    var result = 0;
+    for (var i = 0; i < b.length; i++) {
+        if (b[i] == ".") {
+            result++;
+        }
+    }
+ document.getElementById("sentanceCount").innerHTML = result;
+ console.log(result);
+}
+function charCounter() {
+    var a = document.getElementById("textInput").value;
+    var b = a.split("");
+    var result = b.length;
+    document.getElementById("charCount").innerHTML = result;
+}
+function pageDisplay() {
+    charCounter();
+    wordCounter();
+    sentanceCount();
 }

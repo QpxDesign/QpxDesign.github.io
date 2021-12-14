@@ -26,13 +26,22 @@
     <a href=""><h5>by QxpDesign</h5></a>
   </header>
   <div id="converter">
-    <textarea name="textInput" id="textInput" cols="30" rows="10"></textarea>
+    <textarea
+      name="textInput"
+      id="textInput"
+      cols="30"
+      rows="10"
+      oninput="pageDisplay()"
+    ></textarea>
     <select name="selectedCase" id="selectedCase">
       <option value="Title">Title Case</option>
       <option value="Upper">UPPER CASE</option>
       <option value="Lower">lower case</option>
     </select>
     <button onclick="caseConverter()">CONVERT</button>
+    <h4>Word Count: <span id="wordCount"></span></h4>
+    <h4>Sentance Count: <span id="sentanceCount"></span></h4>
+    <h4>Character Count: <span id="charCount"></span></h4>
   </div>
   <body></body>
 </html>

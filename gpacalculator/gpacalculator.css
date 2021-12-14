@@ -1,0 +1,56 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+header {
+  background-color: #35d45f;
+  height: fit-content;
+  font-size: 5vh;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+}
+h5 {
+  padding-bottom: 15px;
+  margin: 0;
+  font-family: bely-display;
+  font-size: 3vh;
+}
+input {
+  width: fit-content;
+  height: 4vh;
+  font-size: 2vh;
+  font-family: bely-display, sans-serif;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 15px;
+}
+h4 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-size: 20pt;
+}
+select {
+  width: fit-content;
+  height: 4vh;
+  font-size: 2vh;
+  font-family: Raleway, sans-serif;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+button {
+  width: fit-content;
+  height: 4vh;
+  font-size: 2vh;
+  font-family: Raleway, sans-serif;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 15px;
+  background-color: #35d45f;
+}
