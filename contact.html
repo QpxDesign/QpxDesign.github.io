@@ -91,8 +91,8 @@
       padding-right: 0.5vw;
       padding-left: 1vw;
     }
-    .aboutBlock {
-      width: 75%;
+    .contactBlock {
+      width: 85%;
       height: auto;
       margin: auto;
       text-align: center;
@@ -103,6 +103,8 @@
     h3 {
       font-size: 3vh;
       font-weight: 100;
+      margin-left: 5%;
+      margin-right: 5%;
     }
     p {
       text-align: left;
@@ -119,58 +121,96 @@
       padding-left: 5%;
       margin: 0;
     }
+    input {
+      display: block;
+      width: 60%;
+      height: 3vh;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: Bely-display, sans-serif;
+      font-size: 2vh;
+    }
+    textarea {
+      display: block;
+      width: 60%;
+      height: 30vh;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: Bely-display, sans-serif;
+      font-size: 2vh;
+    }
+    button {
+      font-size: 2vh;
+      width: 10%;
+      min-width: fit-content;
+      height: 5vh;
+      margin-top: 1%;
+      background-color: #aba8ff;
+      font-family: Bely-display, sans-serif;
+      border: 1px solid black;
+    }
   </style>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail() {
+      var fullName = document.getElementById("userName").value;
+      var emailAdress = document.getElementById("userEmail").value;
+      var messageSubject = document.getElementById("messageSubject").value;
+      var message = document.getElementById("message").value;
+      var consoleMsg =
+        "Name: " +
+        fullName +
+        "\n" +
+        "Email: " +
+        emailAdress +
+        "\n" +
+        "Subject: " +
+        messageSubject +
+        "\n" +
+        "Message: " +
+        "\n" +
+        message;
+      console.log(consoleMsg);
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "sender@email_address.com",
+        Password: "ejxi7KB&rz8eT4Ls",
+        To: "receiver@email_address.com",
+        From: "sender@email_address.com",
+        Subject: "QPX DESIGN CONTACT",
+        Body: consoleMsg,
+      }).then(function (message) {
+        alert("mail sent successfully");
+      });
+    }
+  </script>
   <body></body>
   <nav>
     <a href="" class="menubaritem">About</a>
     <a href="/index.html"> <h1>Qpx Design</h1></a>
-
     <a href="" class="menubaritem"> Contact</a>
   </nav>
-  <div class="aboutBlock">
-    <h2 style="padding-top: 30px">QPX Design</h2>
-    <h3>Web Development Project created by Quinn Patwardhan</h3>
-    <h4>Why?</h4>
-    <p>
-      This project's main goal is to create a suite of web tools that allow
-      users to quickly complete everyday tasks. We hope to be a one-stop-shop
-      for all web tools, and to expand our varity of tools everyday.
-    </p>
-    <h4>How?</h4>
-    <p>
-      This web project was coded entirely by Quinn Patwardhan using HTML, CSS,
-      and Javascript (with the jQuery plugin). This project is hosted by Github
-      Pages.
-    </p>
-    <h4>Learn More</h4>
-    <p>
-      To learn more information about both this Project and about Quinn, visit
-      the following links: my
+  <div class="contactBlock">
+    <h2 style="padding-top: 30px">Contact Me</h2>
+    <h3>
+      To contact me with questions, concerns, or suggestions about QpxDesign,
+      please fill out the following form:
+    </h3>
+    <label for="userName">Full Name: </label>
+    <input type="text" name="userName" id="userName" />
+    <label for="userEmail">Email: </label>
+    <input type="email" name="userEmail" id="userEmail" />
+    <label for="messageSubject">Subject: </label>
+    <input type="text" name="messageSubject" id="messageSubject" />
+    <label for="messageSubject">Message: </label>
+    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    <button onclick="sendEmail()">Submit</button>
+    <h3 style="padding-bottom: 5%">
+      To message me about anything unrelated to Qxp Design, please send me a
+      message on
       <a href="https://www.linkedin.com/in/quinn-patwardhan-3b32441b4"
         >LinkedIn</a
-      >, my
-      <a href="https://quinnpatwardhan.com/portfolio">personal website</a>, and
-      my <a href="https://github.com/QpxDesign">GitHub Homepage</a>.
-    </p>
-    <h4>Website History:</h4>
-    <p style="padding-bottom: 0">
-      <strong>Dec. 10th, 2021</strong> - Project Started
-    </p>
-    <p style="padding-bottom: 0">
-      <strong>Dec. 11th, 2021</strong> - Avacado Math, Color Flipper, and
-      Password Generator created
-    </p>
-
-    <p style="padding-bottom: 0">
-      <strong>Dec. 12th, 2021</strong> - Grade Calculator and Currency Converter
-      created
-    </p>
-    <p style="padding-bottom: 0">
-      <strong>Dec. 13th, 2021</strong> - GPA Calculator and Capitalization
-      Changer created
-    </p>
-    <p style="padding-bottom: 0">
-      <strong>Dec. 14th, 2021</strong> - About & Contact Pages Created
-    </p>
+      >
+    </h3>
   </div>
 </html>
