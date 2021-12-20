@@ -1,0 +1,91 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+header {
+  background-color: crimson;
+  font-family: co-headline, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  font-size: 5vh;
+  padding-top: 1%;
+}
+header h5 {
+  font-size: 3vh;
+  margin: 0;
+  padding-top: 0.5%;
+}
+.schoolDisplayBlock {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  width: 45vh;
+  height: auto;
+  text-align: center;
+  font-family: omnes-pro, sans-serif;
+  margin: 1%;
+}
+.schoolDisplayBlock img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  max-height: 100%;
+  object-fit: cover;
+}
+.schoolDisplayBlock h1 {
+  font-weight: 700;
+  margin: 0;
+}
+.schoolDisplayBlock h2 {
+  font-weight: 400;
+  margin: 0;
+}
+#filterOptions {
+  display: inline-block;
+  color: white;
+  height: fit-content;
+  font-family: omnes-pro, sans-serif;
+  font-size: 2.4vh;
+  margin: 0;
+  padding: 0;
+  width: 33%;
+}
+#filterOptions label {
+  font-weight: 600;
+  padding-left: 3%;
+  margin: 0;
+}
+#filterOptions h3 {
+  display: inline;
+  font-size: 2vh;
+  padding-right: 1%;
+}
+#filterOptions h4 {
+  margin: 0;
+  padding: 0;
+  padding-left: 3%;
+  padding-top: 1%;
+}
+#filterOptions select {
+  width: fit-content;
+  height: 40px;
+  min-height: 20%;
+  margin: 0;
+  margin-left: 3%;
+  font-family: omnes-pro, sans-serif;
+  font-weight: 600;
+  font-size: 2vh;
+}
+#filterMenu {
+  background-color: #686bc8;
+  padding-bottom: 2%;
+}
+a {
+  color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CalState Compare | Home</title>
+    <link rel="stylesheet" href="calstatecompare.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/vht6pct.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/vyh1asz.css" />
+  </head>
+  <header>
+    CalState Compare
+    <h5>Find the School That Fits You</h5>
+    <a href="/index.html"
+      ><h5
+        style="font-family: bely-display; font-weight: 500; padding-bottom: 1%"
+      >
+        by Qpx Design
+      </h5></a
+    >
+  </header>
+  <script src="calstatecompare.js"></script>
+  <div id="filterMenu">
+    <div id="filterOptions">
+      <!-- Range for Acceptance Rate-->
+      <h4>Acceptance Rate</h4>
+      <label for="acceptanceRateSliderMAX">Min</label>
+      <input
+        value="0"
+        type="range"
+        id="acceptanceRateSliderMIN"
+        oninput="sliderUpdate('acceptanceRateSliderMIN','acceptanceRateSliderMINDisplay')"
+        onchange="acceptanceRateFilter()"
+      />
+      <h3 id="acceptanceRateSliderMINDisplay">0</h3>
+      <label for="acceptanceRateSliderMAX">Max</label>
+      <input
+        value="100"
+        type="range"
+        id="acceptanceRateSliderMAX"
+        onchange="acceptanceRateFilter()"
+        oninput="sliderUpdate('acceptanceRateSliderMAX','acceptanceRateSliderMAXDisplay')"
+      />
+      <h3 id="acceptanceRateSliderMAXDisplay">100</h3>
+    </div>
+    <div id="filterOptions">
+      <!-- Range for Graudation Rate-->
+      <h4>Graduation Rate</h4>
+      <label for="graduationRateSliderMAX">Min</label>
+      <input
+        value="0"
+        type="range"
+        id="graduationRateSliderMIN"
+        onchange="graduationRateFilter()"
+        oninput="sliderUpdate('graduationRateSliderMIN','graduationRateSliderMINDisplay')"
+      />
+      <h3 id="graduationRateSliderMINDisplay">0</h3>
+      <label for="graduationRateSliderMAX">Max</label>
+      <input
+        value="100"
+        type="range"
+        id="graduationRateSliderMAX"
+        onchange="graduationRateFilter()"
+        oninput="sliderUpdate('graduationRateSliderMAX','graduationRateSliderMAXDisplay')"
+      />
+      <h3 id="graduationRateSliderMAXDisplay">100</h3>
+    </div>
+    <div id="filterOptions">
+      <!-- Select for campus Rate-->
+      <h4>Campus Size</h4>
+      <select name="CampusSize" id="CampusSize" onchange="campusSizeFilter()">
+        <option value="Small">Small (>300 Ac)</option>
+        <option value="Medium">Medium (300-800 Ac)</option>
+        <option value="Large">Large (800+ Ac)</option>
+        <option value="All">All</option>
+      </select>
+    </div>
+    <div id="filterOptions">
+      <!-- Select for Student Body Size-->
+      <h4>Student Body Size</h4>
+      <select
+        name="StudentCount"
+        id="StudentCount"
+        onchange="studentCountFilter()"
+      >
+        <option value="Small">Small (>10,000)</option>
+        <option value="Medium">Medium (10,000-25,000)</option>
+        <option value="Large">Large (25,000+)</option>
+        <option value="All">All</option>
+      </select>
+    </div>
+  </div>
+  <div class="schoolDisplayBlock">
+    <img src="images/bakersfield.jpeg" alt="" />
+    <h1>CSU Bakersfield</h1>
+    <h2>Bakersfield, CA</h2>
+    <h2>11,264 Total Students</h2>
+    <h2>375 Acre Suburban Campus</h2>
+    <h2>$5,318/Year After Aid</h2>
+    <h2>40% Graduation Rate - 78% Acceptance Rate</h2>
+  </div>
+  <div class="schoolDisplayBlock">
+    <img src="images/channelislands.jpg" alt="" />
+    <h1>CSU Channel Islands</h1>
+    <h2>Camarillo, CA</h2>
+    <h2>6,943 Total Students</h2>
+    <h2>1,187 Acre Rural Campus</h2>
+    <h2>$14,000/Year After Aid</h2>
+    <h2>81% Graduation Rate - 79% Acceptance Rate</h2>
+  </div>
+  <div class="schoolDisplayBlock">
+    <img src="images/chico.jpg" alt="" />
+    <h1>Chico State</h1>
+    <h2>Chico, CA</h2>
+    <h2>16,630 Total Students</h2>
+    <h2>3,249 Acre Small City Campus</h2>
+    <h2>$15,000/Year After Aid</h2>
+    <h2>66% Graduation Rate - 90% Acceptance Rate</h2>
+  </div>
+  <div class="schoolDisplayBlock">
+    <img src="images/dominguezhills.jpg" alt="" />
+    <h1>CSU Dominguez Hills</h1>
+    <h2>Carson, CA</h2>
+    <h2>17,763 Total Students</h2>
+    <h2>346 Acre Urban Campus</h2>
+    <h2>$4,215/Year After Aid</h2>
+    <h2>74% Graduation Rate - 81% Acceptance Rate</h2>
+  </div>
+  <div class="schoolDisplayBlock">
+    <img src="images/eastbay.jpg" alt="" />
+    <h1>Cal State East Bay</h1>
+    <h2>Hayward, CA</h2>
+    <h2>14,641 Total Students</h2>
+    <h2>200 Acre Suburban Campus</h2>
+    <h2>$11,000/Year After Aid</h2>
+    <h2>76% Graduation Rate - 73% Acceptance Rate</h2>
+  </div>
+  <div class="schoolDisplayBlock">
+    <img src="images/csufresno.jpg" alt="" />
+    <h1>Fresno State</h1>
+    <h2>Fresno, CA</h2>
+    <h2>25,341 Total Students</h2>
+    <h2>388 Acre Suburban Campus</h2>
+    <h2>$5,464/Year After Aid</h2>
+    <h2>56% Graduation Rate - 90% Acceptance Rate</h2>
+  </div>
+  <div class="schoolDisplayBlock">
+    <img src="images/fullerton.jpg" alt="" />
+    <h1>Cal State Fullerton</h1>
+    <h2>Fullerton, CA</h2>
+    <h2>41,408 Total Students</h2>
+    <h2>236 Acre Urban Campus</h2>
+    <h2>$7,991/Year After Aid</h2>
+    <h2>66% Graduation Rate - 68% Acceptance Rate</h2>
+  </div>
+  <div class="schoolDisplayBlock">
+    <img src="images/humboldt.jpg" alt="" />
+    <h1>Humboldt State</h1>
+    <h2>Humboldt, CA</h2>
+    <h2>6,431 Total Students</h2>
+    <h2>733 Acre Rural Campus</h2>
+    <h2>$15,000/Year After Aid</h2>
+    <h2>46% Graduation Rate - 85% Acceptance Rate</h2>
+  </div>
+  <div class="schoolDisplayBlock">
+    <img src="images/losangeles.png" alt="" />
+    <h1>Cal State LA</h1>
+    <h2>Los Angeles, CA</h2>
+    <h2>26,342 Total Students</h2>
+    <h2>733 Acre Rural Campus</h2>
+    <h2>$2,768/Year After Aid</h2>
+    <h2>47% Graduation Rate - 76% Acceptance Rate</h2>
+  </div>
+  <div class="schoolDisplayBlock">
+    <img src="images/maritime.jpg" alt="" />
+    <h1>Cal Maritime</h1>
+    <h2>Vallejo, CA</h2>
+    <h2>907 Total Students</h2>
+    <h2>92 Acre Campus</h2>
+    <h2>$21,000/Year After Aid</h2>
+    <h2>64% Graduation Rate - 82% Acceptance Rate</h2>
+  </div>
+  <div class="schoolDisplayBlock">
+    <img src="images/montereybay.jpg" alt="" />
+    <h1>CSU Monterey Bay</h1>
+    <h2>Monterey Bay, CA</h2>
+    <h2>6,871 Total Students</h2>
+    <h2>1,350 Acre Campus</h2>
+    <h2>$12,000/Year After Aid</h2>
+    <h2>60% Graduation Rate - 86% Acceptance Rate</h2>
+  </div>
+  <div class="schoolDisplayBlock">
+    <img src="images/csun.jpg" alt="" />
+    <h1>CSUN</h1>
+    <h2>Northridge, CA</h2>
+    <h2>38,551 Total Students</h2>
+    <h2>1,350 Acre Campus</h2>
+    <h2>$8,414/Year After Aid</h2>
+    <h2>51% Graduation Rate - 66% Acceptance Rate</h2>
+  </div>
+  <div class="schoolDisplayBlock">
+    <img src="images/ponoma.jpg" alt="" />
+    <h1>Cal Poly Pomona</h1>
+    <h2>Pomona, CA</h2>
+    <h2>29,704 Total Students</h2>
+    <h2>1,438 Acre Suburban Campus</h2>
+    <h2>$13,000/Year After Aid</h2>
+    <h2>66% Graduation Rate - 65% Acceptance Rate</h2>
+  </div>
+  <div class="schoolDisplayBlock">
+    <img src="images/sacramento.jpg" alt="" />
+    <h1>Sacramento State</h1>
+    <h2>Sacramento, CA</h2>
+    <h2>29,704 Total Students</h2>
+    <h2>305 Acre Urban Campus</h2>
+    <h2>$9,979/Year After Aid</h2>
+    <h2>78% Graduation Rate - 83% Acceptance Rate</h2>
+  </div>
+  <div class="schoolDisplayBlock">
+    <img src="images/sanbernindino.jpg" alt="" />
+    <h1>Cal State San Bernardino</h1>
+    <h2>San Bernardino, CA</h2>
+    <h2>19,404 Total Students</h2>
+    <h2>441 Acre Urban Campus</h2>
+    <h2>$7,342/Year After Aid</h2>
+    <h2>76% Graduation Rate - 78% Acceptance Rate</h2>
+  </div>
+  <div class="schoolDisplayBlock">
+    <img src="images/sandiego.jpg" alt="" />
+    <h1>San Diego State</h1>
+    <h2>San Diego, CA</h2>
+    <h2>35,578 Total Students</h2>
+    <h2>283 Acre Urban Campus</h2>
+    <h2>$15,000/Year After Aid</h2>
+    <h2>74% Graduation Rate - 37% Acceptance Rate</h2>
+  </div>
+  <div class="schoolDisplayBlock">
+    <img src="images/sanfrancisco.jpg" alt="" />
+    <h1>San Francisco State</h1>
+    <h2>San Francisco, CA</h2>
+    <h2>26,628 Total Students</h2>
+    <h2>141.1 Acre Urban Campus</h2>
+    <h2>$15,000/Year After Aid</h2>
+    <h2>80% Graduation Rate - 84% Acceptance Rate</h2>
+  </div>
+  <div class="schoolDisplayBlock">
+    <img src="images/SanJose.jpg" alt="" />
+    <h1>San José State</h1>
+    <h2>San José, CA</h2>
+    <h2>33,025 Total Students</h2>
+    <h2>154 Acre Urban Campus</h2>
+    <h2>$15,000/Year After Aid</h2>
+    <h2>57% Graduation Rate - 67% Acceptance Rate</h2>
+  </div>
+  <div class="schoolDisplayBlock">
+    <img src="images/sanluisobispo.jpg" alt="" />
+    <h1>Cal Poly San Luis Obispo</h1>
+    <h2>San Luis Obispo, CA</h2>
+    <h2>22,287 Total Students</h2>
+    <h2>9,678 Acre Rural Campus</h2>
+    <h2>$22,000/Year After Aid</h2>
+    <h2>82% Graduation Rate - 32% Acceptance Rate</h2>
+  </div>
+  <div class="schoolDisplayBlock">
+    <img src="images/sanmarcos.jpg" alt="" />
+    <h1>CSU San Marcos</h1>
+    <h2>San Marcos, CA</h2>
+    <h2>14,643 Total Students</h2>
+    <h2>340 Acre Urban Campus</h2>
+    <h2>$15,000/Year After Aid</h2>
+    <h2>53% Graduation Rate - 79% Acceptance Rate</h2>
+  </div>
+  <div class="schoolDisplayBlock">
+    <img src="images/sonoma.jpg" alt="" />
+    <h1>Sonoma State</h1>
+    <h2>Rohnert Park, CA</h2>
+    <h2>7,807 Total Students</h2>
+    <h2>269 Acre Suburban Campus</h2>
+    <h2>$17,000/Year After Aid</h2>
+    <h2>58% Graduation Rate - 89% Acceptance Rate</h2>
+  </div>
+  <div class="schoolDisplayBlock">
+    <img src="images/stanislaus.jpg" alt="" />
+    <h1>Stanislaus State</h1>
+    <h2>Turlock, CA</h2>
+    <h2>10,741 Total Students</h2>
+    <h2>228 Acre Suburban Campus</h2>
+    <h2>$6,019/Year After Aid</h2>
+    <h2>53% Graduation Rate - 89% Acceptance Rate</h2>
+  </div>
+  <body></body>
+</html>

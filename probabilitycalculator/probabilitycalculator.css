@@ -1,0 +1,51 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+header {
+  background-color: #ff6640;
+  height: fit-content;
+  font-family: futura PT;
+  font-weight: 600;
+  text-align: center;
+  font-size: 5vh;
+}
+header h5 {
+  margin: 0;
+  font-family: Bely-display;
+  font-size: 3vh;
+  padding-bottom: 15px;
+}
+.ProbabilityCalculator {
+  width: 100%;
+  margin-top: 2%;
+  text-align: center;
+}
+input {
+  display: block;
+  height: 4vh;
+  width: 10%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  font-family: Bely-display, sans-serif;
+  font-size: 2.3vh;
+}
+label {
+  font-family: Bely-display, sans-serif;
+  font-size: 2.3vh;
+}
+button {
+  width: fit-content;
+  height: 4vh;
+  font-family: Bely-display, sans-serif;
+  font-size: 2vh;
+  background-color: #ff6640;
+  border: 1px solid black;
+}
+h3 {
+  font-family: futura PT;
+  font-weight: 700;
+  font-size: 3vh;
+}
