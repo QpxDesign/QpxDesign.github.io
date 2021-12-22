@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CalState Compare | Home</title>
+    <link
+      rel="stylesheet"
+      href="/calstatecompare/compare/calstatecomparison.css"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/vht6pct.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/vyh1asz.css" />
+  </head>
+  <header>
+    CalState Compare
+    <h5>Find the School That Fits You</h5>
+    <a href="/index.html"
+      ><h5
+        style="font-family: bely-display; font-weight: 500; padding-bottom: 1%"
+      >
+        by Qpx Design
+      </h5></a
+    >
+    <a
+      href="/calstatecompare/calstatecompare.html"
+      style="
+        font-size: 3vh;
+        background-color: lightseagreen;
+        padding: 0.3%;
+        margin: 0;
+      "
+      >Home</a
+    >
+  </header>
+
+  <script src="/calstatecompare/calstatecompare.js"></script>
+  <div class="comparisonOptions">
+    <h2>Compare Colleges:</h2>
+    <select name="compareCollege1" id="compareCollege1">
+      <option value="0">CSU Bakersfield</option>
+      <option value="1">CSU Channel Islands</option>
+      <option value="2">Chico State</option>
+      <option value="3">CSU Dominguez Hills</option>
+      <option value="4">Cal State East Bay</option>
+      <option value="5">Fresno State</option>
+      <option value="6">Cal State Fullerton</option>
+      <option value="7">Humboldt State</option>
+      <option value="8">Cal State LA</option>
+      <option value="9">Cal Maritime</option>
+      <option value="10">CSU Monterey Bay</option>
+      <option value="11">CSUN</option>
+      <option value="12">Cal Poly Ponoma</option>
+      <option value="13">Sacramento State</option>
+      <option value="14">Cal State San Bernardino</option>
+      <option value="15">San Diego State</option>
+      <option value="16">San Francisco State</option>
+      <option value="17">San José State</option>
+      <option value="18">Cal Poly San Luis Obispo</option>
+      <option value="19">CSU San Marcos</option>
+      <option value="20">Sonoma State</option>
+      <option value="21">Stanislaus State</option>
+    </select>
+    <label for="compareCollege2">and</label>
+    <select name="compareCollege2" id="compareCollege2">
+      <option value="0">CSU Bakersfield</option>
+      <option value="1">CSU Channel Islands</option>
+      <option value="2">Chico State</option>
+      <option value="3">CSU Dominguez Hills</option>
+      <option value="4">Cal State East Bay</option>
+      <option value="5">Fresno State</option>
+      <option value="6">Cal State Fullerton</option>
+      <option value="7">Humboldt State</option>
+      <option value="8">Cal State LA</option>
+      <option value="9">Cal Maritime</option>
+      <option value="10">CSU Monterey Bay</option>
+      <option value="11">CSUN</option>
+      <option value="12">Cal Poly Ponoma</option>
+      <option value="13">Sacramento State</option>
+      <option value="14">Cal State San Bernardino</option>
+      <option value="15">San Diego State</option>
+      <option value="16">San Francisco State</option>
+      <option value="17">San José State</option>
+      <option value="18">Cal Poly San Luis Obispo</option>
+      <option value="19">CSU San Marcos</option>
+      <option value="20">Sonoma State</option>
+      <option value="21">Stanislaus State</option>
+    </select>
+    <button onclick="compareColleges()">GO</button>
+  </div>
+  <div id="collegeA">
+    <h1><span id="collegeANameDisplay"></span></h1>
+    <h2><span id="collegeACityDisplay"></span></h2>
+    <h2><span id="collegeAStudentDisplay"></span> Total Students</h2>
+    <h2><span id="collegeASizeDisplay"></span> Acres</h2>
+    <h2>$<span id="collegeACostDisplay"></span> Average Cost Per Year</h2>
+    <h2><span id="collegeAacceptanceDisplay"></span>% Acceptance Rate</h2>
+    <h2><span id="collegeAGraduationDisplay"></span>% Graduation Rate</h2>
+    <h2><span id="collegeASATDisplay"></span> Average SAT Score</h2>
+    <h2><span id="collegeAACTDisplay"></span> Average ACT Score</h2>
+  </div>
+  <div id="collegeB">
+    <span id="imageA"></span>
+    <h1><span id="collegeBNameDisplay"></span></h1>
+    <h2><span id="collegeBCityDisplay"></span></h2>
+    <h2><span id="collegeBStudentDisplay"> </span> Total Students</h2>
+    <h2><span id="collegeBSizeDisplay"> </span> Acres</h2>
+    <h2>$<span id="collegeBCostDisplay"> </span> Average Cost Per Year</h2>
+    <h2><span id="collegeBacceptanceDisplay"></span>% Acceptance Rate</h2>
+    <h2><span id="collegeBGraduationDisplay"></span>% Graduation Rate</h2>
+    <h2><span id="collegeBSATDisplay"></span> Average SAT Score</h2>
+    <h2><span id="collegeBACTDisplay"></span> Average ACT Score</h2>
+  </div>
+</html>

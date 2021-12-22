@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade Calculator | Qpx Design</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vyh1asz.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <meta
+      name="theme-color"
+      content="royalblue"
+      media="(prefers-color-scheme: light)"
+    />
+    <link rel="stylesheet" href="gradecalculator.css" />
+  </head>
+</html>
+<script src="/jquery-3.6.0.min.js"></script>
+
+<script src="/gradecaclculator/gradecalculator.js"></script>
+<header>
+  Grade Calculator
+  <a href="/index.html"><h5>by Qpx Design</h5></a>
+</header>
+<div id="gradeCalc">
+  <h3>Grade:</h3>
+  <h3 id="gradeDisplay"></h3>
+  <button style="margin-top: 30px" onclick="rowGenerator() ">
+    Generate Rows
+  </button>
+  <h3>Grade / Worth</h3>
+  <div id="row">
+    <input type="number" class="g1" />
+    <label for="w1">out of</label>
+    <input type="number" class="w1" />
+    <h4>______________________________________________</h4>
+  </div>
+</div>
+<button onclick="gradeCalculator()">Calculate</button>
+<body></body>

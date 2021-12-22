@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter | Qpx Design</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vyh1asz.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <meta
+      name="theme-color"
+      content="royalblue"
+      media="(prefers-color-scheme: light)"
+    />
+
+    <link rel="stylesheet" href="currencyconverter.css" />
+  </head>
+</html>
+<style></style>
+<script src="/currencyconverter/currenecyconverter.js"></script>
+<header>
+  Currency Converter
+  <a href="/index.html"><h5>by Qpx Design</h5></a>
+</header>
+<script></script>
+<div id="currencyConverter">
+  <input type="number" name="" id="amount" placeholder="$1.00" />
+  <select name="currencyA" id="currencyA">
+    <option value="NZD">NZD</option>
+    <option value="ZAR">ZAR</option>
+    <option value="AUD">AUD</option>
+    <option value="BHD">BHD</option>
+    <option value="JPY">JPY</option>
+    <option value="SGD">SGD</option>
+    <option value="GBP">GBP</option>
+    <option value="KYD">KYD</option>
+    <option value="EURO">EURO</option>
+    <option value="CHF">CHF</option>
+    <option value="USD">USD</option>
+    <option value="CAD">CAD</option>
+  </select>
+  <h3>To</h3>
+  <select name="currencyB" id="currencyB">
+    <option value="NZD">NZD</option>
+    <option value="ZAR">ZAR</option>
+    <option value="AUD">AUD</option>
+    <option value="BHD">BHD</option>
+    <option value="JPY">JPY</option>
+    <option value="SGD">SGD</option>
+    <option value="GBP">GBP</option>
+    <option value="KYD">KYD</option>
+    <option value="EURO">EURO</option>
+    <option value="CHF">CHF</option>
+    <option value="USD">USD</option>
+    <option value="CAD">CAD</option>
+  </select>
+  <button onclick="converter()">CONVERT</button>
+  <input
+    id="resultDisplay"
+    placeholder="4.90"
+    style="margin-top: 15px"
+    readonly="readonly"
+  />
+</div>
