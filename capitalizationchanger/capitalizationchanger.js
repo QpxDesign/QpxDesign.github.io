@@ -39,7 +39,6 @@ function sentanceCount() {
         }
     }
  document.getElementById("sentanceCount").innerHTML = result;
- console.log(result);
 }
 function charCounter() {
     var a = document.getElementById("textInput").value;
@@ -51,4 +50,10 @@ function pageDisplay() {
     charCounter();
     wordCounter();
     sentanceCount();
+}
+function textReverser() {
+    var a = document.getElementById("textInput").value;
+    var b = Array.from(a);
+    document.getElementById("textInput").value = (b.reverse()).join("")
+
 }

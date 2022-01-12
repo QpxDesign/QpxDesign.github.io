@@ -1,0 +1,144 @@
+header {
+  background-color: mediumseagreen;
+  height: 100%;
+  display: inherit;
+  font-family: sofia-pro, sans-serif;
+  font-size: 4vh;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+header h5 {
+  font-family: bely-display;
+  font-weight: 100;
+  font-size: 3vh;
+  margin: 0;
+  padding-bottom: 2vh;
+}
+#flashcard {
+  width: 75vh;
+  max-width: 95%;
+  height: 50vh;
+  border: 2px gray solid;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+}
+#flashcardGen {
+  width: 75vh;
+  max-width: 95%;
+  height: fit-content;
+  border: 2px gray solid;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+}
+#flashcardGen textarea {
+  font-family: sofia-pro, sans-serif;
+  max-width: 70%;
+  max-width: 95%;
+  width: 70%;
+  height: 14vh;
+  border: 2px black solid;
+  margin: 3%;
+  margin-bottom: 3%;
+}
+#flashcardGen label {
+  max-width: 95%;
+  font-weight: 600;
+  font-family: sofia-pro, sans-serif;
+  font-size: 2vh;
+  margin: 2%;
+  margin-bottom: 0%;
+}
+#flashcardGen h5 {
+  font-family: sofia-pro, sans-serif;
+  font-size: 1.7vh;
+  margin: 0;
+  color: gray;
+  margin-left: 2%;
+  max-width: 95%;
+}
+#flashcardGen button {
+  width: 10vh;
+  height: 5vh;
+  font-family: sofia-pro, sans-serif;
+  font-size: 1.7vh;
+  background-color: cadetblue;
+  border: none;
+  color: wheat;
+  display: block;
+  margin: 3%;
+  margin-top: -1%;
+  max-width: 95%;
+  min-width: fit-content;
+}
+#flashcardGen button:hover {
+  border: 2px solid black;
+  max-width: 95%;
+}
+#flashcard h1 {
+  font-family: sofia-pro, sans-serif;
+  text-align: center;
+  font-size: 9vh;
+  max-width: fit-content;
+}
+#flashcard h3 {
+  font-family: sofia-pro, sans-serif;
+  text-align: left;
+  font-size: 2vh;
+  margin: 3%;
+  max-width: 95%;
+}
+#term {
+  max-width: fit-content;
+}
+#definition {
+  display: none;
+  max-width: 95%;
+}
+#buttonRow {
+  text-align: center;
+  width: 75vh;
+  max-width: 95%;
+  height: 10vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px gray solid;
+  margin-top: 2vh;
+}
+#buttonRow button {
+  height: 8vh;
+  max-width: 95%;
+  width: 10vh;
+  font-family: co-headline, sans-serif;
+  padding-top: 1.5vh;
+  font-size: 5vh;
+  color: white;
+  border: none;
+  background-color: darkseagreen;
+  min-width: fit-content;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+#buttonRow button:hover {
+  max-width: 95%;
+  background-color: darkgreen;
+}
+#cardNumber {
+  font-family: sofia-pro, sans-serif;
+  text-align: left;
+  font-size: 2vh;
+  margin: 2%;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}

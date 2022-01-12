@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-215931331-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-215931331-1");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcard Generator | Qpx Design</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vht6pct.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/vyh1asz.css" />
+
+    <link rel="stylesheet" href="/flashcard/flashcard.css" />
+  </head>
+  <script src="/flashcard/flashcard.js"></script>
+  <header>
+    Flashcard Generator
+    <a href="/index.html"><h5>by Qpx Design</h5></a>
+  </header>
+  <div id="flashcardGen">
+    <label for="inputedTerms">Terms & Definitions</label>
+    <h5>Seperate Term & Definition by Colons and Cards by Commas</h5>
+    <textarea
+      name="inputedTerms"
+      id="inputedTerms"
+      cols="30"
+      rows="10"
+    ></textarea>
+    <button onclick="generateFlashcards()">GENERATE</button>
+  </div>
+  <body>
+    <div style="display: none" id="flashcard" onclick="showDef() ">
+      <span id="cardNumber"></span>
+      <h1 id="term"></h1>
+      <h3 id="definition"></h3>
+    </div>
+    <div id="buttonRow" style="display: none" id="flashcard">
+      <button onclick="back()"><</button>
+      <button onclick="next()">></button>
+    </div>
+  </body>
+</html>
