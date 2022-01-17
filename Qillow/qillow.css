@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  font-family: Sofia-pro, sans-serif;
+  background-color: cadetblue;
+  text-align: center;
+  font-size: 8vh;
+  font-weight: bold;
+}
+header h5 {
+  margin: 0;
+  font-family: bely-display, sans-serif;
+  font-size: 3vh;
+  padding-bottom: 2vh;
+}
+#searchBar {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: 5vh;
+  width: 30%;
+  min-width: 35vh;
+  font-family: bely-display, sans-serif;
+  font-size: 3vh;
+}
+label {
+  margin-top: 5vh;
+  font-family: Sofia-pro, sans-serif;
+  color: gray;
+  text-align: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.sampleHouseDisplay {
+  margin-top: 5vh;
+  border: 1px solid gray;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+  font-family: Sofia-pro, sans-serif;
+  width: fit-content;
+}
+.sampleHouseDisplay img {
+  width: 45vh;
+  height: 30vh;
+  object-fit: cover;
+}
+.sampleHouseDisplay h1 {
+  margin: 1vh;
+}
+.sampleHouseDisplay h2 {
+  margin: 1vh;
+}
+.sampleHouseDisplay h3 {
+  margin: 1vh;
+}
+#error {
+  font-family: Sofia-pro, sans-serif;
+  text-align: center;
+  margin-top: 8vh;
+}
+#matchesDisplay {
+  font-family: Sofia-pro, sans-serif;
+  color: gray;
+  text-align: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 2vh;
+}
