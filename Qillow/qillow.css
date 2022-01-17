@@ -72,3 +72,10 @@ label {
   margin-left: auto;
   font-size: 2vh;
 }
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+a:hover {
+  color: skyblue;
+}
