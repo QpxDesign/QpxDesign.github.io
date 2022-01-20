@@ -15,7 +15,6 @@
       content="#b491ff "
       media="(prefers-color-scheme: light)"
     />
-    <link rel="stylesheet" href="passwordGenerator.css" />
   </head>
   <style>
     body {
@@ -92,7 +91,7 @@
       padding-left: 1vw;
     }
     .contactBlock {
-      width: 85%;
+      width: 90%;
       height: auto;
       margin: auto;
       text-align: center;
@@ -150,7 +149,6 @@
       border: 1px solid black;
     }
   </style>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
     function sendEmail() {
       var fullName = document.getElementById("userName").value;
@@ -171,24 +169,16 @@
         "\n" +
         message;
       console.log(consoleMsg);
-      Email.send({
-        Host: "smtp.gmail.com",
-        Username: "sender@email_address.com",
-        Password: "ejxi7KB&rz8eT4Ls",
-        To: "receiver@email_address.com",
-        From: "sender@email_address.com",
-        Subject: "QPX DESIGN CONTACT",
-        Body: consoleMsg,
-      }).then(function (message) {
-        alert("mail sent successfully");
-      });
+      window.open(
+        `mailto:quinn@qpxdesign.com?subject=${messageSubject}&body=${message}`
+      );
     }
   </script>
   <body></body>
   <nav>
-    <a href="" class="menubaritem">About</a>
+    <a href="/about.html" class="menubaritem">About</a>
     <a href="/index.html"> <h1>Qpx Design</h1></a>
-    <a href="" class="menubaritem"> Contact</a>
+    <a href="/contact.html" class="menubaritem"> Contact</a>
   </nav>
   <div class="contactBlock">
     <h2 style="padding-top: 30px">Contact Me</h2>

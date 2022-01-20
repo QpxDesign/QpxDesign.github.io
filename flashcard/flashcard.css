@@ -109,6 +109,7 @@ header h5 {
   margin-right: auto;
   border: 3px gray solid;
   margin-top: 2vh;
+  margin-bottom: 8vh;
 }
 #buttonRow button {
   height: 8vh;
@@ -123,6 +124,9 @@ header h5 {
   min-width: fit-content;
   margin-left: 3%;
   margin-right: 3%;
+  border: 1px black solid;
+  border-radius: 5%;
+  margin-top: 1%;
 }
 #buttonRow button:hover {
   max-width: 95%;

@@ -37,12 +37,13 @@ label {
 .sampleHouseDisplay {
   margin-top: 5vh;
   border: 1px solid gray;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: left;
+  text-align: center;
   font-family: Sofia-pro, sans-serif;
   width: fit-content;
+  display: inline-block;
+  width: 45vh;
+  height: auto;
+  margin: 2%;
 }
 .sampleHouseDisplay img {
   width: 45vh;
@@ -51,12 +52,15 @@ label {
 }
 .sampleHouseDisplay h1 {
   margin: 1vh;
+  font-size: 4vh;
 }
 .sampleHouseDisplay h2 {
   margin: 1vh;
+  font-size: 3vh;
 }
 .sampleHouseDisplay h3 {
   margin: 1vh;
+  font-size: 2vh;
 }
 #error {
   font-family: Sofia-pro, sans-serif;
@@ -78,4 +82,43 @@ a {
 }
 a:hover {
   color: skyblue;
+}
+#helpSpan:hover {
+  text-decoration: solid;
+}
+#helpWindow {
+  min-width: 50vh;
+  width: 30%;
+  border: 1px solid black;
+  font-family: Sofia-pro, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 2%;
+}
+#helpWindow p {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 2vh;
+}
+#hideHelp {
+  font-size: 2vh;
+}
+#hideHelp :hover {
+  color: black;
+  display: none;
+  color: gray;
+}
+#resetButton {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  width: fit-content;
+  padding: 1vh;
+  font-family: Sofia-pro, sans-serif;
+  background-color: wheat;
+  border: 1px solid black;
+  font-size: 2vh;
+  margin-top: 1%;
 }

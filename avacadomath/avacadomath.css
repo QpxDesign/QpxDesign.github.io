@@ -8,10 +8,11 @@ header {
   padding-top: 15px;
   font-family: Raleway, sans-serif;
   font-weight: 600;
-  font-size: 38px;
+  font-size: 4vh;
   text-align: center;
-  height: 100px;
+  height: fit-content;
   width: 100%;
+  padding-bottom: 1%;
 }
 body {
   margin: 0;
@@ -21,7 +22,7 @@ body {
 header h5 {
   font-family: bely-display, sans-serif;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 3vh;
   padding: 0px;
   margin: 5px;
 }
@@ -49,16 +50,22 @@ mark {
   color: white;
 }
 .Calculator p {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Raleway, sans-serif;
   display: inline-block;
 }
 h3 {
   margin: 0px;
   padding-top: 30px;
   padding-left: 30px;
-  font-family: futura PT, sans-serif;
+  font-family: Raleway, sans-serif;
 }
 p {
   font-family: futura PT, sans-serif;
-  font-size: 14px;
+  font-size: 2vh;
+}
+button {
+  width: fit-content;
+  background-color: wheat;
+  border: 1px solid black;
+  font-size: 2vh;
 }
