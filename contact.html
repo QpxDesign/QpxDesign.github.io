@@ -98,6 +98,7 @@
       font-family: bely-display, sans-serif;
       font-size: 3vh;
       background-color: bisque;
+      padding-bottom: 5vh;
     }
     h3 {
       font-size: 3vh;
@@ -150,29 +151,6 @@
     }
   </style>
   <script>
-    function sendEmail() {
-      var fullName = document.getElementById("userName").value;
-      var emailAdress = document.getElementById("userEmail").value;
-      var messageSubject = document.getElementById("messageSubject").value;
-      var message = document.getElementById("message").value;
-      var consoleMsg =
-        "Name: " +
-        fullName +
-        "\n" +
-        "Email: " +
-        emailAdress +
-        "\n" +
-        "Subject: " +
-        messageSubject +
-        "\n" +
-        "Message: " +
-        "\n" +
-        message;
-      console.log(consoleMsg);
-      window.open(
-        `mailto:quinn@qpxdesign.com?subject=${messageSubject}&body=${message}`
-      );
-    }
   </script>
   <body></body>
   <nav>
@@ -184,23 +162,15 @@
     <h2 style="padding-top: 30px">Contact Me</h2>
     <h3>
       To contact me with questions, concerns, or suggestions about QpxDesign,
-      please fill out the following form:
+      please email me at <a href="mailto:quinn@qpxdesign.com">quinn@qpxdesign.com</a>
     </h3>
-    <label for="userName">Full Name: </label>
-    <input type="text" name="userName" id="userName" />
-    <label for="userEmail">Email: </label>
-    <input type="email" name="userEmail" id="userEmail" />
-    <label for="messageSubject">Subject: </label>
-    <input type="text" name="messageSubject" id="messageSubject" />
-    <label for="messageSubject">Message: </label>
-    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-    <button onclick="sendEmail()">Submit</button>
-    <h3 style="padding-bottom: 5%">
       To message me about anything unrelated to Qpx Design, please send me a
       message on
       <a href="https://www.linkedin.com/in/quinn-patwardhan-3b32441b4"
         >LinkedIn</a
-      >
+      > or email me at <a href="mailto:quinn@qpxdesign.com">quinn@qpxdesign.com</a>
+    </h3>
+    <h3>Thanks!
     </h3>
   </div>
 </html>

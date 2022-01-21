@@ -153,14 +153,14 @@ function compareColleges() {
     document.getElementById("collegeACityDisplay").innerHTML = collegeStats[a][7]
     document.getElementById("collegeBCityDisplay").innerHTML = collegeStats[b][7]
     // Displays Student Count of Selected Colleges
-    document.getElementById("collegeAStudentDisplay").innerHTML = collegeStats[a][1]
-    document.getElementById("collegeBStudentDisplay").innerHTML = collegeStats[b][1]
+    document.getElementById("collegeAStudentDisplay").innerHTML = collegeStats[a][1].toLocaleString('en-US')
+    document.getElementById("collegeBStudentDisplay").innerHTML = collegeStats[b][1].toLocaleString('en-US')
     //  Displays Campus Size of Selected Colleges
     document.getElementById("collegeASizeDisplay").innerHTML = collegeStats[a][2]
     document.getElementById("collegeBSizeDisplay").innerHTML = collegeStats[b][2]
     // Displays Average Cost of Selected Colleges
-    document.getElementById("collegeACostDisplay").innerHTML = collegeStats[a][4]
-    document.getElementById("collegeBCostDisplay").innerHTML = collegeStats[b][4]
+    document.getElementById("collegeACostDisplay").innerHTML = collegeStats[a][4].toLocaleString('en-US')
+    document.getElementById("collegeBCostDisplay").innerHTML = collegeStats[b][4].toLocaleString('en-US')
     // Displays Acceptance Rate of Selected Colleges
     document.getElementById("collegeAacceptanceDisplay").innerHTML = collegeStats[a][6]
     document.getElementById("collegeBacceptanceDisplay").innerHTML = collegeStats[b][6]
@@ -173,4 +173,17 @@ function compareColleges() {
     // Displays Average SAT Score of Selected Colleges
     document.getElementById("collegeAACTDisplay").innerHTML = collegeStats[a][9]
     document.getElementById("collegeBACTDisplay").innerHTML = collegeStats[b][9]
+}
+
+// Function that toggles the display of the Site Info div when button is hovered
+function toggleInfoDiv() {
+    if (document.getElementById("siteInfo").style.display == "none") {
+        document.getElementById("siteInfo").style.display = "block";
+        document.getElementById("siteInfoToggle").innerHTML = "Hide"
+    }
+    else if (document.getElementById("siteInfo").style.display == "block") {
+        document.getElementById("siteInfo").style.display = "none";
+        document.getElementById("siteInfoToggle").innerHTML = "About This Site"
+
+    }
 }
