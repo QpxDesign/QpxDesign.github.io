@@ -14,6 +14,13 @@ function caseConverter() {
             result = a.toUpperCase();
         } else if (selectedCase == "Lower") {
             result = a.toLowerCase();
+        } else if (selectedCase == "Random") {
+            var randomChoice = Math.floor(Math.random() * 2)
+            if (randomChoice == 0) {
+                result += String(b[i].toUpperCase()); 
+            } else {
+                result += String(b[i].toLowerCase()); 
+        }
         }
     }
     document.getElementById("textInput").value = String(result);

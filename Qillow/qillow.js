@@ -22,7 +22,7 @@ function search() {
   var matchesCount = 0;
   var resultsDisplayDiv = document.getElementById("resultsDisplay")
   // Generates Regex query for search bar input value, with the Key 'i' to make the search case insensitive
-  const searchQuery = RegExp(" " + document.getElementById("searchBar").value, "i")
+  const searchQuery = RegExp("^" + document.getElementById("searchBar").value, "i")
   // Unloads all existing houses 
   resultsDisplayDiv.innerHTML = "";
   for (var i = 0; i < allHomes.length; i++) {
