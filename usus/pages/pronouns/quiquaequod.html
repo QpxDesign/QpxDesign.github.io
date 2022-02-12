@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latin Qui Quae Quod Quiz | Usus by QpxDesign</title>
+    <meta
+      name="description"
+      content="Latin Quiz for all Qui Quae Quod Pronoun endings in Latin"
+    />
+    <link rel="stylesheet" href="/usus.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/vht6pct.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/vyh1asz.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-215931331-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-215931331-1");
+    </script>
+  </head>
+  <header style="height: fit-content; width: 100%; padding: 1%">
+    <a href="/usus.html"
+      ><span style="display: inline; padding: 3%; margin: 0; padding-right: 0%"
+        >Usus</span
+      ></a
+    >
+    <h5 style="display: inline; padding: 1%; margin: 0">
+      By Usus by QpxDesign
+    </h5>
+  </header>
+  <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+  <script>
+    var quiQuaeQuod = [
+      // NOM SING
+      "quī",
+      "quae",
+      "quod",
+      // GEN SING
+      "cuius",
+      "cuius",
+      "cuius",
+      // DAT SING
+      "cui",
+      "cui",
+      "cui",
+      // ACC SING
+      "quem",
+      "quam",
+      "quod",
+      // ABL SING
+      "quō",
+      "quā",
+      "quō",
+      // NOM PL
+      "quī",
+      "quae",
+      "quae",
+      // GEN PL
+      "quōrum",
+      "quārum",
+      "quōrum",
+      // DAT PL
+      "quibus",
+      "quibus",
+      "quibus",
+      // ACC SING
+      "quōs",
+      "quās",
+      "quae",
+      // ACC SING
+      "quibus",
+      "quibus",
+      "quibus",
+    ];
+  </script>
+  <script>
+    document.addEventListener("keyup", function (event) {
+      if (event.key === "Enter") {
+        checkGuess(quiQuaeQuod);
+      }
+    });
+  </script>
+  <body>
+    <input type="text" id="guess" />
+    <button id="submitButton" onclick="checkGuess(quiQuaeQuod)">Submit</button>
+    <button id="revealButton" onclick="revealAll(quiQuaeQuod)">Reveal</button>
+    <div id="statsDisplay">
+      <h3 id="outofMessage"></h3>
+    </div>
+    <h1 id="pageTitle">Qui Quae Quod Quiz</h1>
+    <table id="guess_table">
+      <tr>
+        <th style="opacity: 50%"></th>
+        <th><span>Masculine</span></th>
+        <th><span>Feminine</span></th>
+        <th><span>Neuter</span></th>
+      </tr>
+      <tr>
+        <td class="TableColoumLabel">Nom. Sing</td>
+        <td id="tablerow_0"></td>
+        <td id="tablerow_1"></td>
+        <td id="tablerow_2"></td>
+      </tr>
+      <tr>
+        <td class="TableColoumLabel">Gen. Sing</td>
+        <td id="tablerow_3"></td>
+        <td id="tablerow_4"></td>
+        <td id="tablerow_5"></td>
+      </tr>
+      <tr>
+        <td class="TableColoumLabel">Dat. Sing</td>
+        <td id="tablerow_6"></td>
+        <td id="tablerow_7"></td>
+        <td id="tablerow_8"></td>
+      </tr>
+      <tr>
+        <td class="TableColoumLabel">Acc. Sing</td>
+        <td id="tablerow_9"></td>
+        <td id="tablerow_10"></td>
+        <td id="tablerow_11"></td>
+      </tr>
+      <tr>
+        <td class="TableColoumLabel">Abl. Sing</td>
+        <td id="tablerow_12"></td>
+        <td id="tablerow_13"></td>
+        <td id="tablerow_14"></td>
+      </tr>
+      <tr>
+        <td class="TableColoumLabel">Nom. Pl</td>
+        <td id="tablerow_15"></td>
+        <td id="tablerow_16"></td>
+        <td id="tablerow_17"></td>
+      </tr>
+      <tr>
+        <td class="TableColoumLabel">Gen. Pl</td>
+        <td id="tablerow_18"></td>
+        <td id="tablerow_19"></td>
+        <td id="tablerow_20"></td>
+      </tr>
+      <tr>
+        <td class="TableColoumLabel">Dat. Pl</td>
+        <td id="tablerow_21"></td>
+        <td id="tablerow_22"></td>
+        <td id="tablerow_23"></td>
+      </tr>
+      <tr>
+        <td class="TableColoumLabel">Acc. Pl</td>
+        <td id="tablerow_24"></td>
+        <td id="tablerow_25"></td>
+        <td id="tablerow_26"></td>
+      </tr>
+      <tr>
+        <td class="TableColoumLabel">Abl. Pl</td>
+        <td id="tablerow_27"></td>
+        <td id="tablerow_28"></td>
+        <td id="tablerow_29"></td>
+      </tr>
+    </table>
+    <div id="pageStats">
+      <h1>Quiz for all Endings of Qui Quae Quod</h1>
+      <h2>
+        If you find any errors, please email us at quinn@Usus by QpxDesign.com.
+        Thanks!
+      </h2>
+    </div>
+    <script src="/usus.js"></script>
+  </body>
+</html>
