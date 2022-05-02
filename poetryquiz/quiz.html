@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poetry Quiz | By QpxDesign</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vht6pct.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/vyh1asz.css" />
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <header>Poetry Quiz<a href="/index.html">By QpxDesign</a></header>
+  <script src="quiz.js"></script>
+  <body onload="createExerpt()">
+    <div class="poem-exerct-wrapper">
+      <p id="poem-exerct">
+      </p>
+      <div class="guess-wrapper">
+        <label for="titleGuess">Title: </label>
+        <input type="text" id="titleGuess" />
+        <label  style="margin-top: 1em"for="authorGuess">Author (last name): </label>
+        <input type="text" id="authorGuess" />
+        <button id="guess-button" onclick="checkGuess()">Guess</button>
+      </div>
+    </div>
+  </body>
+</html>
