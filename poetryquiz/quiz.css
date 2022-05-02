@@ -33,7 +33,6 @@ p {
     margin-top: 5vh;
     white-space: nowrap;
     text-align: center;
-    max-width: 80%;
 }
 .line {
     overflow: ellipsis;
@@ -69,4 +68,9 @@ button:hover {
     p {
         font-size: 1em;
     }
+}
+h1 {
+    text-align: center;
+    font-size: 1em;
+    margin-top: ;
 }
